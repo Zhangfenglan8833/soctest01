@@ -1,0 +1,11 @@
+# 完成所有数据的排序
+b=[5,7,3,6,1,8,9,4,2]
+ble=len(b)
+for j in range(1,ble):
+    for i in range(0,ble-1):
+        if(b[i]>b[i+1]):
+            tmp=b[i]
+            b[i]=b[i+1]
+            b[i+1]=tmp
+            print("第",j,"次排序:",b)
+print("排序后的列表是",b)
